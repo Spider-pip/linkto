@@ -15,7 +15,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   username,
   image,
 }) => {
-  const [pageLabel, pageLink] = getPageLink(username, "SUBDOMAIN");
+  const [pageLabel, pageLink] = getPageLink(username, "PATH");
 
   return (
     <Flex layout="vertical" className="items-center mb-6 mx-2.5">
