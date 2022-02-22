@@ -1,0 +1,27 @@
+{
+  "extends": "./node_modules/@linkto/core/config/ts/lib.json",
+  "include": ["src", "types", "global.d.ts"],
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@types/*": ["./src/types/*"]
+    }
+  }
+}

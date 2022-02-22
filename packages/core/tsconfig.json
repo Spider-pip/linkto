@@ -1,0 +1,24 @@
+{
+  "extends": "./config/ts/lib.json",
+  "include": ["src", "types", "config"],
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  }
+}

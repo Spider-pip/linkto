@@ -1,0 +1,18 @@
+{
+  "extends": "./node_modules/@linkto/core/config/ts/lib.json",
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "noEmit": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "linkto",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "dev": "turbo run dev --parallel --no-cache",
+    "lint": "turbo run lint",
+    "format": "prettier --write '**/*.{ts,tsx,.md}'",
+    "deploy:studio": "turbo run build --scope=\"@linkto/studio\" --include-dependencies --no-deps",
+    "deploy:web": "turbo run build --scope=\"@linkto/web\" --include-dependencies --no-deps"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "outputs": [
+          "dist/**",
+          ".next/**"
+        ],
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "test": {
+        "outputs": [
+          "coverage/**"
+        ],
+        "dependsOn": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      },
+      "clean": {
+        "cache": false
+      }
+    }
+  }
+}

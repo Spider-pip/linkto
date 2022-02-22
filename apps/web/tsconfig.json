@@ -1,0 +1,26 @@
+{
+  "extends": "./node_modules/@linkto/core/config/ts/nextjs.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ],
+      "~assets/*": [
+        "./src/assets/*"
+      ],
+      "~components/*": [
+        "./src/components/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
