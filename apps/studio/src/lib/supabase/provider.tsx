@@ -44,9 +44,9 @@ const SupabaseProvider = (props: SupabaseProviderProps) => {
   const router = useRouter();
   /**
    * Used for the Supabase Callback redirect
-   * href -> http://localhost:4200/siginin
+   * href -> https://app.linkto.study/siginin
    * pathname -> /signin
-   * callbackRedirectPath -> http://localhost:4200
+   * callbackRedirectPath -> https://app.linkto.study
    */
   const callbackRedirectPath =
     isBrowser && window.location.href.replace(window.location.pathname, "");

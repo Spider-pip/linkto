@@ -23,7 +23,7 @@ const Header: FC = () => {
           <Button
             // @ts-ignore
             as={Link}
-            url="http://localhost:4200/signup"
+            url="https://app.linkto.study/signup"
             target="same"
             size="lg"
             variant="secondary"
@@ -34,7 +34,7 @@ const Header: FC = () => {
           <Button
             // @ts-ignore
             as={Link}
-            url="http://localhost:4200/signin"
+            url="https://app.linkto.study/signin"
             target="same"
             size="lg"
             icon={User}

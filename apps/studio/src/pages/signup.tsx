@@ -61,7 +61,7 @@ function SignUpPage() {
       }
       seoOptions={{
         title: "Sign Up",
-        canonical: "http://localhost:4200/signup",
+        canonical: "https://app.linkto.study/signup",
       }}
     >
       <form onSubmit={handleSubmit(handleSignUp)}>

@@ -34,7 +34,7 @@ function SignInPage() {
       }
       seoOptions={{
         title: "Sign In",
-        canonical: "http://localhost:4200/signin",
+        canonical: "https://app.linkto.study/signin",
       }}
     >
       <Form<SignInDto>

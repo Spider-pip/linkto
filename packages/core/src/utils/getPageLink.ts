@@ -29,14 +29,14 @@ export const getPageLink: GetPageLinkSignature = (
     case PageLinkPreference.PATH: {
       pageLinkLabel = `linkto.study/${user}`;
       pageLinkUrl = __DEV__
-        ? `http://localhost:3000/p/${user}`
+        ? `https://linkto.study/p/${user}`
         : `https://linkto.study/p/${user}`;
       break;
     }
     case PageLinkPreference.SUBDOMAIN: {
       pageLinkLabel = `${user}.linkto.study`;
       pageLinkUrl = __DEV__
-        ? `http://${user}.localhost:3000`
+        ? `https://${user}.linkto.study`
         : `https://${user}.linkto.study`;
       break;
     }

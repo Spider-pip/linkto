@@ -36,10 +36,10 @@ const Hero: FC = () => {
       setUsername("");
     } else {
       window.location.href = __DEV__
-        ? `http://localhost:4200/signup?username=${encodeURIComponent(
+        ? `https://app.linkto.study/signup?username=${encodeURIComponent(
             username
           )}`
-        : `http://localhost:4200/signup?username=${encodeURIComponent(
+        : `https://app.linkto.study/signup?username=${encodeURIComponent(
             username
           )}`;
     }

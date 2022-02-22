@@ -5,11 +5,11 @@ export default function middleware(req: NextRequest) {
   // Get hostname (e.g. linkto.study, app.linkto.study )
   const hostname = req.headers.get("host");
 
-  const DEV_HOST = "localhost:3000";
+  const DEV_HOST = "linkto.study";
   const PROD_HOST = process.env.NEXT_PUBLIC_ROOT_URL;
 
   /**
-   * If dev, get the custom domain/subdomain value by removing localhost:3000
+   * If dev, get the custom domain/subdomain value by removing linkto.study
    * If prod, get the custom domain/subdomain value by removing the root URL
    */
   const currentHost =
