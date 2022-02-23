@@ -178,7 +178,7 @@ const PageProfileForm: FC<PageProfileFormProps> = ({ page }) => {
                 </Avatar>
               ) : page.user.avatar_url ? (
                 <Avatar
-                  src={page.user.avatar_url}
+                  src={page.user.avatar_url + process.env.TOKEN}
                   title={avatarAlt}
                   alt={avatarAlt}
                   fallback={page.user.username}
