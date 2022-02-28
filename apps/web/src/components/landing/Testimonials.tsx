@@ -22,9 +22,9 @@ const Testimonials: FC = () => {
           />
 
           <TestimonialCard
-            name="Coming soon"
-            username="soon"
-            image="https://qatejhwdylvqgwcegrjn.supabase.in/storage/v1/object/public/avatars/default-avatar.jpg"
+            name="Advait Udayabhanu"
+            username="Advait"
+            image="https://fphlnlfccwbymdowdqjd.supabase.in/storage/v1/object/sign/avatars/b399ade3-face-4c54-92cd-b54548125228/advait.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmF0YXJzL2IzOTlhZGUzLWZhY2UtNGM1NC05MmNkLWI1NDU0ODEyNTIyOC9hZHZhaXQuanBlZyIsImlhdCI6MTY0NjA0MjMxMCwiZXhwIjoxOTYxNDAyMzEwfQ.U-uvMzUuiiunKcgopNeneAeT8NIFdYEUx1OVrlSEiMg"
           />
           <TestimonialCard
             name="Coming soon"
