@@ -63,7 +63,7 @@ The entire codebase consists in **JavaScript/TypeScript**, here is a list of tec
 
 There is also a diagram that shows the repository architecture & indexing, you [can check out the file here](https://www.figma.com/file/bhRxnWHj0PG4BFBQNVeNIc/Linkto-Repository-Architecture?node-id=0%3A1)
 
-`biolnk/`<br>
+`linkto/`<br>
 `├──`[`apps`](./apps) — web/mobile applications<br>
 `├────`[`studio`](./apps/studio) — app dashboard<br>
 `├────`[`web`](./apps/web) — web app, used for page generation<br>
